@@ -11,6 +11,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 50px;
+  margin-top: 100px;
 }
 
 h1 {
@@ -28,18 +29,26 @@ h2 {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-bottom: 50px;
+  padding: 15px 50px;
+  background-color: #f8ede3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .nav a {
-  color: #fff;
+  color: #c5705d;
   text-decoration: none;
   padding: 10px;
-  color: #c5705d;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .nav a:hover {
-  text-decoration: underline;
+  color: #f8ede3;
+  background-color: #c5705d;
+  border-radius: 5px;
 }
 
 .about {
@@ -66,7 +75,7 @@ footer {
   padding: 20px;
   text-align: center;
   margin-top: 50px;
-  border: dotted;
+  border: none;
 }
 
 footer p {
