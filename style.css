@@ -2,23 +2,35 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8ede3;
-  color: #c5705d;
+  background-color: #ffffff;
+  color: black;
 }
 
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 50px;
-  margin-top: 100px;
+  /* margin-top: 100px; */
 }
 
-h1 {
+.me {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 4rem;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
+  /* border: 1px solid black; */
+  /* margin-left: 50%; */
 }
-
+.me p {
+  width: 60%;
+}
+.me .empty {
+  width: 40%;
+}
 h2 {
   font-size: 2rem;
   margin-bottom: 20px;
@@ -28,21 +40,30 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 80%;
   padding: 15px 50px;
-  background-color: #f8ede3;
+  /* background-color: #f8ede3; */
   position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
+  top: 5vmin;
+  /* left: 0; */
+  z-index: 999;
+  border-radius: 2rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  user-select: none;
+}
+.nav .mode {
+  cursor: pointer;
+  user-select: none;
 }
 
 .nav a {
-  color: #c5705d;
+  /* color: #c5705d; */
   text-decoration: none;
   padding: 10px;
   transition: color 0.3s ease, background-color 0.3s ease;
+  font-weight: bold;
+  /* text-decoration: underline; */
 }
 
 .nav a:hover {
@@ -54,30 +75,35 @@ h2 {
 .about {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 520vmin;
+}
+#forImage {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  /* background-image: url(image/me.jpg); */
+  background-color: grey;
+  background-size: cover; /* Ensures the image covers the div */
+  background-position: center; /* Centers the image within the div */
+  margin: 0 auto; /* Centers the div horizontally */
+  /* z-index: 11; */
+  display: block; /* Ensures it's treated as a block element */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
-.about img {
-  width: 300px;
-  border-radius: 50%;
-  margin-right: 20px;
+#forImage img {
+  position: relative;
+  z-index: -1;
 }
 
 .about p {
   text-align: justify;
   line-height: 1.5;
+  width: 60%;
 }
 
 footer {
-  color: #c5705d;
-  padding: 20px;
-  text-align: center;
-  margin-top: 50px;
-  border: none;
-}
-
-footer p {
-  margin: 0;
+  /* color: #c5705d; */
 }
