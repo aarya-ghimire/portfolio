@@ -1,9 +1,9 @@
 body {
-  font-family: sans-serif;
+  font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
-  color: black;
+  background-color: #f4f3ee; /* Off-white background */
+  color: #463f3a; /* Deep brown text color */
 }
 
 .container {
@@ -12,64 +12,65 @@ body {
   justify-content: center;
   align-items: center;
   padding: 50px;
-  /* margin-top: 100px; */
-}
-
-.me {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 4rem;
-  /* margin-bottom: 10px; */
-  /* border: 1px solid black; */
-  /* margin-left: 50%; */
-}
-.me p {
-  width: 60%;
-}
-.me .empty {
-  width: 40%;
-}
-h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 90%;
   padding: 15px 50px;
-  /* background-color: #f8ede3; */
   position: fixed;
-  top: 5vmin;
-  /* left: 0; */
+  top: 0;
   z-index: 999;
-  border-radius: 2rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-  user-select: none;
+  border-radius: 10px;
+  background-color: #8a817c; /* Muted taupe background for navbar */
+  color: #f4f3ee; /* Off-white text color */
 }
+
 .nav .mode {
   cursor: pointer;
   user-select: none;
 }
 
 .nav a {
-  /* color: #c5705d; */
   text-decoration: none;
-  padding: 10px;
+  padding: 10px 15px;
+  color: #f4f3ee; /* Off-white text color */
   transition: color 0.3s ease, background-color 0.3s ease;
   font-weight: bold;
-  /* text-decoration: underline; */
 }
 
 .nav a:hover {
-  color: #f8ede3;
-  background-color: #c5705d;
+  color: #463f3a; /* Deep brown text color */
+  background-color: #e0afa0; /* Peach background on hover */
   border-radius: 5px;
+}
+
+.me {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px; /* Space for fixed navbar */
+  text-align: center;
+}
+
+.me-text {
+  margin-top: 2rem;
+}
+
+.me p {
+  font-size: 3rem; /* Adjusted font size */
+  color: #463f3a; /* Deep brown text color */
+  margin: 0;
+}
+
+.me h2 {
+  font-size: 2rem; /* Adjusted font size for the job title */
+  color: #8a817c; /* Muted taupe color for the job title */
+  margin: 0;
 }
 
 .about {
@@ -77,33 +78,59 @@ h2 {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 520vmin;
+  margin-bottom: 5rem;
+  border-radius: 10px;
+  padding: 20px;
 }
-#forImage {
+
+#forImage,
+#bioImage {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  /* background-image: url(image/me.jpg); */
-  background-color: grey;
-  background-size: cover; /* Ensures the image covers the div */
-  background-position: center; /* Centers the image within the div */
-  margin: 0 auto; /* Centers the div horizontally */
-  /* z-index: 11; */
-  display: block; /* Ensures it's treated as a block element */
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: #bcb8b1; /* Light beige for placeholder images */
+  background-size: cover;
+  background-position: center;
 }
 
-#forImage img {
-  position: relative;
-  z-index: -1;
-}
-
-.about p {
+.about p,
+.biography p {
   text-align: justify;
-  line-height: 1.5;
+  line-height: 1.6;
+  font-size: 1.15rem; /* Unified font size for better readability */
+  color: #463f3a; /* Deep brown text color */
+  width: 60%;
+  max-width: 800px; /* Ensures paragraphs don’t stretch too wide */
+}
+
+.biography {
+  padding: 50px;
+  background-color: #f4f3ee; /* Off-white background for the biography section */
+  color: #463f3a; /* Deep brown text color */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.bio-content {
+  max-width: 800px;
   width: 60%;
 }
 
+.biography h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #e0afa0; /* Peach color for section heading */
+}
+
 footer {
-  /* color: #c5705d; */
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  background-color: #8a817c; /* Muted taupe background for the footer */
+  color: #f4f3ee; /* Off-white text color */
+  border-radius: 10px;
 }
