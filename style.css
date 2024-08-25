@@ -2,8 +2,8 @@ body {
   font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f3ee; /* Off-white background */
-  color: #463f3a; /* Deep brown text color */
+  background-color: #f4f3ee;
+  color: #463f3a;
 }
 
 .container {
@@ -24,8 +24,8 @@ body {
   top: 0;
   z-index: 999;
   border-radius: 10px;
-  background-color: #8a817c; /* Muted taupe background for navbar */
-  color: #f4f3ee; /* Off-white text color */
+  background-color: #8a817c;
+  color: #f4f3ee;
 }
 
 .nav .mode {
@@ -36,14 +36,14 @@ body {
 .nav a {
   text-decoration: none;
   padding: 10px 15px;
-  color: #f4f3ee; /* Off-white text color */
+  color: #f4f3ee;
   transition: color 0.3s ease, background-color 0.3s ease;
   font-weight: bold;
 }
 
 .nav a:hover {
-  color: #463f3a; /* Deep brown text color */
-  background-color: #e0afa0; /* Peach background on hover */
+  color: #463f3a;
+  background-color: #e0afa0;
   border-radius: 5px;
 }
 
@@ -53,7 +53,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 100px; /* Space for fixed navbar */
+  margin-top: 100px;
   text-align: center;
 }
 
@@ -62,14 +62,14 @@ body {
 }
 
 .me p {
-  font-size: 3rem; /* Adjusted font size */
-  color: #463f3a; /* Deep brown text color */
+  font-size: 3rem;
+  color: #463f3a;
   margin: 0;
 }
 
 .me h2 {
-  font-size: 2rem; /* Adjusted font size for the job title */
-  color: #8a817c; /* Muted taupe color for the job title */
+  font-size: 2rem;
+  color: #8a817c;
   margin: 0;
 }
 
@@ -88,7 +88,7 @@ body {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  background-color: #bcb8b1; /* Light beige for placeholder images */
+  background-color: #bcb8b1;
   background-size: cover;
   background-position: center;
 }
@@ -97,16 +97,17 @@ body {
 .biography p {
   text-align: justify;
   line-height: 1.6;
-  font-size: 1.15rem; /* Unified font size for better readability */
-  color: #463f3a; /* Deep brown text color */
+  font-size: 1.15rem;
+  color: #463f3a;
   width: 60%;
-  max-width: 800px; /* Ensures paragraphs don’t stretch too wide */
+  max-width: 800px;
+  padding: 0 20px;
 }
 
 .biography {
   padding: 50px;
-  background-color: #f4f3ee; /* Off-white background for the biography section */
-  color: #463f3a; /* Deep brown text color */
+  background-color: #f4f3ee;
+  color: #463f3a;
   width: 100%;
   display: flex;
   align-items: center;
@@ -123,14 +124,44 @@ body {
 .biography h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #e0afa0; /* Peach color for section heading */
+  color: #e0afa0;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* background-color: #ffffff; */
+  /* border-radius: 10px; */
+  /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
+  /* padding: 20px; */
+  max-width: 800px;
+  margin: 50px auto; /* Center the skills section */
+}
+
+.skills h5 {
+  margin: 10px;
+  margin-left: 0%;
+  padding: 10px 20px;
+  /* background-color: #e0afa0; */
+  /* color: #f4f3ee; */
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.skills h5:hover {
+  transform: scale(1.05);
 }
 
 footer {
   text-align: center;
   padding: 20px;
   margin-top: 50px;
-  background-color: #8a817c; /* Muted taupe background for the footer */
-  color: #f4f3ee; /* Off-white text color */
+  background-color: #8a817c;
+  color: #f4f3ee;
   border-radius: 10px;
 }
