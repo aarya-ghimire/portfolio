@@ -19,6 +19,13 @@ body {
   padding: 50px;
 }
 
+.logo {
+  font-family: "Montserrat", sans-serif;
+  color: #fed9b7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -207,6 +214,7 @@ body {
   width: 60%;
   font-size: 1.15rem;
   color: #fed9b7;
+  text-align: justify;
 }
 
 .education-details {
@@ -398,6 +406,17 @@ body {
   padding-left: 34px;
 }
 
+#personal_details a {
+  margin-top: 5px;
+  color: #8a817c;
+  padding-left: 34px;
+  text-decoration: none;
+}
+
+#personal_details a:hover {
+  text-decoration: underline;
+}
+
 .contact {
   padding: 20px;
   border-radius: 8px;
@@ -501,4 +520,11 @@ body {
   font-size: 16px;
   margin: 0;
   padding: 10px 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #f07167;
+  margin: 20px 0;
+  width: 100%;
 }
