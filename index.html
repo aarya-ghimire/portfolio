@@ -20,7 +20,7 @@
                 <a href="#biography">About Me</a>
                 <a href="#education">Education</a>
                 <a href="#skills">Skills</a>
-                <a href="#">Project</a>
+                <a href="#contact">Project</a>
                 <a href="#">Contact</a>
             </div>
             <div class="mode">
@@ -164,6 +164,30 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!-- Contact me section -->
+        <div id="contact" class="contact">
+            <h1>Contact Me</h1>
+            <p>Feel free to reach out if you'd like to discuss a project, have any questions, or just want to say hello.
+                I'd love to hear from you!</p>
+
+            <form action="/submit_form" method="POST" class="contact-form">
+                <div class="form-row">
+                    <label for="name">Your Name:</label>
+                    <label for="email">Your Email:</label>
+                </div>
+                <div class="form-row">
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here"
+                    required></textarea>
+
+                <input type="submit" value="Send Message">
+            </form>
         </div>
 
 
