@@ -372,6 +372,102 @@ body {
     width: 65%;
   }
 }
+.skill_bar .bar .python {
+  width: 65%;
+  animation: python 2s;
+}
+@keyframes python {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+/* Project section */
+.project {
+  padding: 2rem;
+  background-color: #001219;
+  color: #f4f3ee;
+}
+
+.project-item {
+  background-color: #f4f3ee;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #001219;
+}
+
+.project-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.project {
+  padding: 2rem;
+  background-color: #001219;
+  color: #f4f3ee;
+  text-align: center;
+}
+
+.project h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #e0afa0;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2rem;
+  justify-items: center;
+}
+
+.project-item {
+  background-color: #f4f3ee;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #001219;
+  text-align: center;
+}
+
+.project-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.project-item h2 {
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.project-item p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #666;
+}
+
+.project-item a {
+  display: block;
+  text-decoration: none;
+  color: #00afb9;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.project-item a:hover {
+  text-decoration: underline;
+}
 
 /* Contact me section */
 #personal_details {
