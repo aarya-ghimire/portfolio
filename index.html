@@ -17,7 +17,9 @@
 <body>
     <div class="container">
         <div class="nav">
-            <div class="logo">Aarya_717</div>
+            <div class="logo">
+                <p>Aarya_717</p>
+            </div>
             <div class="elements">
                 <a href="#">Online Portfolio</a>
                 <a href="#biography">About Me</a>
@@ -266,6 +268,11 @@
             </div>
         </footer>
         <script>
+            const header = document.querySelector("header");
+            window.addEventListener("scroll", function () {
+                header.classList.toggle("sticky", this.window.scrollY > 0);
+
+            })
             function displayPopup(event) {
                 var name = document.getElementById('name').value.trim();
                 var email = document.getElementById('email').value.trim();
