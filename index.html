@@ -55,9 +55,8 @@
                     journey began with a deep curiosity about how things work, which naturally evolved into a passion
                     for tech. As I delved into coding and development, this initial fascination grew into a profound
                     dedication to the field. Over the years, I’ve honed my skills through countless projects and
-                    continuous learning, driven by the excitement of innovation and problem-solving. My path has been
-                    one of constant growth, exploring new technologies, and embracing challenges, all fueled by a
-                    relentless enthusiasm for making an impact in the tech world. This journey has shaped who I am
+                    continuous learning, driven by the excitement of innovation and problem-solving. This journey has
+                    shaped who I am
                     today, and I am committed to pushing the boundaries of what technology can achieve.
                 </p>
             </div>
@@ -189,8 +188,9 @@
                 <div class="project-item">
                     <img src="image/land.webp" alt="project image">
                     <h2>Project 2</h2>
-                    <p>This project is about Land Rental system. This project was done using Python.</p>
-                    <a href="#">View Project</a>
+                    <p>This project is about Land Rental system. Here, you can rent, return a land and program will
+                        generate invoice also. This project was done using Python.</p>
+                    <a href="https://github.com/aarya-ghimire/land-rental-system">View Project</a>
                 </div>
 
                 <div class="project-item">
@@ -242,11 +242,10 @@
                     <input type="email" id="email" name="email" placeholder="Enter your email" required>
                 </div>
 
-                <label for="message">Your Message:</label>
+                <label for="message" id="msg">Your Message:</label>
                 <textarea id="message" style="font-family: 'Arial'" name="message" rows="5"
                     placeholder="Write your message here" required></textarea>
-
-                <input type="submit" value="Send Message">
+                <button id="btn" onclick="displayPopup()">Send Message</button>
             </form>
         </div>
 
@@ -266,6 +265,20 @@
                 <p>© Aarya Ghimire 2024</p>
             </div>
         </footer>
+        <script>
+            function displayPopup(event) {
+                var name = document.getElementById('name').value.trim();
+                var email = document.getElementById('email').value.trim();
+                var message = document.getElementById('message').value.trim();
+
+                if (name === '' || email === '' || message === '') {
+                    alert('Please fill out all fields.');
+                } else {
+                    alert('Your message has been sent!');
+                }
+            }
+        </script>
+
 
     </div>
 </body>

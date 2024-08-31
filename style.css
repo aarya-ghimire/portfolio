@@ -455,7 +455,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   color: #666;
-  justify-content: left;
+  text-align: left;
 }
 
 .project-item a {
@@ -523,6 +523,21 @@ body {
   margin-top: -25%;
 }
 
+#btn {
+  background-color: #e0afa0;
+  color: #001219;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+}
+
+#btn:hover {
+  background-color: #8a817c;
+}
+
 .contact h1 {
   color: #e0afa0;
   margin-bottom: 20px;
@@ -538,6 +553,11 @@ body {
 .contact-form .form-row {
   display: flex;
   justify-content: space-between;
+}
+#msg {
+  color: #e0afa0;
+  margin-bottom: 5px;
+  flex: 1;
 }
 
 .contact-form label {
@@ -563,22 +583,7 @@ body {
   border-radius: 4px;
   background-color: #bcb8b1;
   color: #001219;
-  margin-bottom: 15px;
-}
-
-.contact-form input[type="submit"] {
-  background-color: #e0afa0;
-  color: #001219;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-  width: 100%;
-}
-
-.contact-form input[type="submit"]:hover {
-  background-color: #8a817c;
+  margin-bottom: 0px;
 }
 
 /* Footer section css */
@@ -625,3 +630,5 @@ hr {
   margin: 20px 0;
   width: 100%;
 }
+
+/* Media queries */
