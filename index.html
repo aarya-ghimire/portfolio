@@ -240,7 +240,9 @@
             <p>Feel free to reach out if you'd like to discuss a project, have any questions, or just want to say hello.
                 I'd love to hear from you!</p>
 
-            <form action="/submit_form" method="POST" class="contact-form" onsubmit="displayPopup(event)">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+
+                <input type="hidden" name="access_key" value="3fe0d95c-9551-4dc1-b151-f177265c214a">
                 <div class="form-row">
                     <label for="name">Your Name:</label>
                     <label for="email">Your Email:</label>
@@ -275,18 +277,6 @@
         </div>
     </footer>
     </div>
-
-    <script>
-        function displayPopup(event) {
-            event.preventDefault();
-
-            alert('Sending message...');
-
-            setTimeout(function () {
-                alert('Message sent successfully!');
-            }, 1500);
-        }
-    </script>
 
 </body>
 
