@@ -14,16 +14,17 @@ body {
 .container {
   display: flex;
   flex-direction: column;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  padding: 3rem; /* Updated from 50px to 3rem */
+  /* padding: 3rem;  */
 }
 
 .logo {
   font-family: "Montserrat", sans-serif;
   color: #fed9b7;
   text-transform: uppercase;
-  letter-spacing: 0.0625rem; /* Updated from 1px to 0.0625rem */
+  letter-spacing: 0.0625rem;
 }
 
 .logo p:hover {
@@ -37,15 +38,15 @@ body {
   align-items: center;
   width: 80%;
   height: 8%;
-  padding: 1rem 3rem; /* Updated from 15px 50px to 1rem 3rem */
+  padding: 1rem 3rem;
   position: fixed;
-  margin-top: 0.625rem; /* Updated from 10px to 0.625rem */
+  margin-top: 0.625rem;
   top: 0;
   z-index: 999;
-  border-radius: 0.9375rem; /* Updated from 15px to 0.9375rem */
+  border-radius: 0.9375rem;
   background-color: #264653;
   color: #fed9b7;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1); /* Updated from 0px 2px 4px */
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
 }
 
 .nav .mode {
@@ -55,7 +56,7 @@ body {
 
 .nav a {
   text-decoration: none;
-  padding: 0.625rem 1.25rem; /* Updated from 10px 20px to 0.625rem 1.25rem */
+  padding: 0.625rem 1.25rem;
   color: #fed9b7;
   transition: color 0.3s ease, background-color 0.3s ease;
   font-weight: bold;
@@ -64,7 +65,7 @@ body {
 .nav a:hover {
   color: #f07167;
   background-color: #264653;
-  border-radius: 0.3125rem; /* Updated from 5px to 0.3125rem */
+  border-radius: 0.3125rem;
 }
 
 .me {
@@ -73,9 +74,9 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 6.25rem; /* Updated from 100px to 6.25rem */
+  margin-top: 6.25rem;
   text-align: center;
-  padding: 3rem; /* Updated from 50px to 3rem */
+  padding: 3rem;
 }
 
 .me-text {
@@ -102,14 +103,14 @@ body {
   justify-content: space-between;
   width: 100%;
   margin-bottom: 5rem;
-  padding: 1.25rem; /* Updated from 20px to 1.25rem */
+  padding: 1.25rem;
 }
 
 #forImage {
-  width: 18.75rem; /* Updated from 300px to 18.75rem */
-  height: 18.75rem; /* Updated from 300px to 18.75rem */
+  width: 18.75rem;
+  height: 18.75rem;
   border-radius: 50%;
-  margin-left: 6.25rem; /* Updated from 100px to 6.25rem */
+  margin-left: 6.25rem;
   background-color: #00afb9;
   background-size: cover;
   background-position: center;
@@ -202,7 +203,6 @@ body {
 }
 
 /* Education Section */
-/* Education section */
 .education {
   padding: 50px;
   width: 100%;
@@ -222,8 +222,8 @@ body {
 
 .education-content {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  /* justify-content: space-between; */
+  /* align-items: flex-start; */
   width: 100%;
   max-width: 1000px;
 }
@@ -622,14 +622,122 @@ hr {
   width: 100%;
 }
 
-/* Light mode */
-.light-mode {
-  background-color: #f4f3ee;
-  color: #001219;
-}
+/* Media queries */
+@media screen and (max-width: 455px) {
+  /* nav bars and main section */
+  .elements {
+    display: none;
+  }
+  .me-text p {
+    font-size: 1.5rem;
+  }
+  .me-text h2 {
+    font-size: large;
+  }
+  .about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  #forImage {
+    height: 12rem;
+    width: 12rem;
+    margin-left: 0;
+  }
+  .about p {
+    width: 100%;
+    font-size: 1rem;
+  }
 
-/* Dark mode */
-.dark-mode {
-  background-color: #001219;
-  color: #f4f3ee;
+  /* biography section */
+  .biography {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 0;
+  }
+  #bioImage {
+    height: 12rem;
+    width: 12rem;
+    margin-left: 0;
+  }
+  .biography h2 {
+    font-size: large;
+    text-align: center;
+  }
+  .bio-content {
+    width: 100%;
+  }
+  .bio-content p {
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  /* inteest section*/
+  .intrest {
+    align-items: center;
+    width: 20rem;
+    height: 9rem;
+  }
+  .intrest h5 {
+    width: 99.8px;
+  }
+
+  /* education section */
+  .education {
+    width: 100%;
+    display: inline;
+  }
+  .education h1 {
+    text-align: center;
+    align-items: center;
+    font-size: large;
+  }
+
+  .education-content p {
+    width: 100%;
+  }
+
+  .education-details {
+    display: inline;
+    margin-left: 0;
+  }
+
+  .education-description {
+    display: inline;
+    width: 100%;
+  }
+
+  /* skills section */
+  .skills h2 {
+    font-size: large;
+  }
+  .skills_head p {
+    font-size: 1rem;
+  }
+  .skills_head {
+    margin-bottom: 0.8rem;
+  }
+  .skills_main {
+    display: inline;
+  }
+
+  /* project section */
+  .project h2 {
+    font-size: large;
+  }
+
+  /* contact me section */
+  .contact {
+    margin-top: 0.8rem;
+  }
+  .contact h1 {
+    font-size: large;
+  }
+  .contact p {
+    font-size: 1rem;
+  }
 }
