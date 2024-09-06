@@ -715,6 +715,10 @@ hr {
     width: 100%;
   }
 
+  .education-description p {
+    font-size: 1rem;
+  }
+
   /* skills section */
   .skills h2 {
     font-size: large;
