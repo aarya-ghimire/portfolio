@@ -464,7 +464,7 @@ body {
 #personal_details {
   margin-left: 2%;
   padding: 3.125rem;
-  border-radius: 0.5rem;
+  /* border-radius: 0.5rem; */
   width: 100%;
   max-width: 37.5rem;
   margin-right: auto;
@@ -623,7 +623,7 @@ hr {
 }
 
 /* Media queries */
-@media screen and (max-width: 455px) {
+@media (max-width: 480px) {
   /* nav bars and main section */
   .elements {
     display: none;
@@ -741,6 +741,261 @@ hr {
   /* contact me section */
   .contact {
     margin-top: 0.8rem;
+  }
+  .contact h1 {
+    font-size: large;
+  }
+  .contact p {
+    font-size: 1rem;
+  }
+}
+
+/* New media query */
+@media (min-width: 481px) and (max-width: 768px) {
+  .elements {
+    display: none;
+  }
+  .me-text p {
+    font-size: 1.5rem;
+  }
+  .me-text h2 {
+    font-size: large;
+  }
+  .about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  #forImage {
+    height: 12rem;
+    width: 12rem;
+    margin-left: 0;
+  }
+  .about p {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  /* biography section */
+  .biography {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 0;
+  }
+  #bioImage {
+    height: 12rem;
+    width: 12rem;
+    margin-left: 0;
+  }
+  .biography h2 {
+    font-size: large;
+    text-align: center;
+  }
+  .bio-content {
+    width: 100%;
+  }
+  .bio-content p {
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  /* inteest section*/
+  .intrest {
+    align-items: center;
+    width: 35rem;
+    height: 6rem;
+  }
+  .intrest h5 {
+    width: 99.8px;
+  }
+
+  /* education section */
+  .education {
+    width: 100%;
+    display: block;
+  }
+  .education h1 {
+    text-align: center;
+    align-items: center;
+    font-size: large;
+  }
+  .education-content {
+    display: inline;
+  }
+  .education-content p {
+    width: 100%;
+  }
+
+  .years {
+    text-align: center;
+  }
+  .education-details {
+    display: inline;
+  }
+
+  .education-description {
+    display: inline;
+    width: 100%;
+  }
+
+  .education-description p {
+    font-size: 1rem;
+  }
+
+  /* skills section */
+  .skills h2 {
+    font-size: large;
+  }
+  .skills_head p {
+    font-size: 1rem;
+  }
+  .skills_head {
+    margin-bottom: 0.8rem;
+  }
+  .skills_main {
+    display: inline;
+  }
+
+  /* project section */
+  .project h2 {
+    font-size: large;
+  }
+
+  /* contact me section */
+  .contact {
+    margin-top: 0.8rem;
+    margin-left: 0;
+  }
+  .contact h1 {
+    font-size: large;
+  }
+  .contact p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .elements {
+    display: none;
+  }
+  .me-text p {
+    font-size: 1.5rem;
+  }
+  .me-text h2 {
+    font-size: large;
+  }
+  .about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  #forImage {
+    height: 15rem;
+    width: 15rem;
+    margin-left: 0;
+  }
+  .about p {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  /* biography section */
+  .biography {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 0;
+  }
+  #bioImage {
+    height: 15rem;
+    width: 15rem;
+    margin-left: 0;
+  }
+  .biography h2 {
+    font-size: large;
+    text-align: center;
+  }
+  .bio-content {
+    width: 100%;
+  }
+  .bio-content p {
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  /* inteest section*/
+  .intrest {
+    align-items: center;
+    width: 35rem;
+    height: 6rem;
+  }
+  .intrest h5 {
+    width: 99.8px;
+  }
+
+  /* education section */
+  .education {
+    width: 100%;
+    display: block;
+  }
+  .education h1 {
+    text-align: center;
+    align-items: center;
+    font-size: large;
+  }
+  .education-content {
+    display: inline;
+  }
+  .education-content p {
+    width: 100%;
+  }
+
+  .years {
+    text-align: center;
+  }
+  .education-details {
+    display: inline;
+  }
+
+  .education-description {
+    display: inline;
+    width: 100%;
+  }
+
+  .education-description p {
+    font-size: 1rem;
+  }
+
+  /* skills section */
+  .skills h2 {
+    font-size: large;
+  }
+  .skills_head p {
+    font-size: 1rem;
+  }
+  .skills_head {
+    margin-bottom: 0.8rem;
+  }
+  .skills_main {
+    display: inline;
+  }
+
+  /* project section */
+  .project h2 {
+    font-size: large;
+  }
+
+  /* contact me section */
+  .contact {
+    margin-top: -35%;
+    margin-left: auto;
   }
   .contact h1 {
     font-size: large;
