@@ -689,21 +689,25 @@ hr {
   /* education section */
   .education {
     width: 100%;
-    display: inline;
+    display: block;
   }
   .education h1 {
     text-align: center;
     align-items: center;
     font-size: large;
   }
-
+  .education-content {
+    display: inline;
+  }
   .education-content p {
     width: 100%;
   }
 
+  .years {
+    text-align: center;
+  }
   .education-details {
     display: inline;
-    margin-left: 0;
   }
 
   .education-description {
