@@ -1004,3 +1004,23 @@ hr {
     font-size: 1rem;
   }
 }
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .nav {
+    width: 90%;
+  }
+  #forImage {
+    height: 15rem;
+    width: 15rem;
+    margin-left: 3rem;
+  }
+  #bioImage {
+    height: 15rem;
+    width: 15rem;
+    margin-left: 3rem;
+  }
+  .contact {
+    margin-top: -35%;
+    margin-left: auto;
+  }
+}
