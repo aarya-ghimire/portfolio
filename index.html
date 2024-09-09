@@ -29,7 +29,7 @@
                 <a href="#contact">Contact</a>
             </div>
             <div class="mode">
-                <span class="material-symbols-outlined">dark_mode</span>
+                <span class="material-symbols-outlined" id="theme-toggle">dark_mode</span>
             </div>
         </div>
 
@@ -277,6 +277,31 @@
         </div>
     </footer>
     </div>
+
+
+    <script>
+        const toggleButton = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        // Load saved theme from localStorage
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            body.classList.add(savedTheme);
+            toggleButton.textContent = savedTheme === 'light-mode' ? 'light_mode' : 'dark_mode';
+        }
+
+        toggleButton.addEventListener('click', () => {
+            if (body.classList.contains('light-mode')) {
+                body.classList.remove('light-mode');
+                toggleButton.textContent = 'dark_mode';
+                localStorage.setItem('theme', '');
+            } else {
+                body.classList.add('light-mode');
+                toggleButton.textContent = 'light_mode';
+                localStorage.setItem('theme', 'light-mode');
+            }
+        });
+    </script>
 
 </body>
 

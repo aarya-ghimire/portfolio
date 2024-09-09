@@ -1026,3 +1026,147 @@ hr {
 }
 
 /* Additional */
+:root {
+  --bg-color: #001219;
+  --text-color: #fed9b7;
+  --primary-color: #f07167;
+  --secondary-color: #264653;
+  --hover-color: #f07167;
+  --accent-color: #00afb9;
+}
+
+.light-mode {
+  --bg-color: #f4f3ee;
+  --text-color: #333333;
+  --primary-color: #ff6f61;
+  --secondary-color: #b2b2b2;
+  --hover-color: #ff8c00;
+  --accent-color: #00afb9;
+  --project-bg-color: #ffffff;
+  --footer-bg-color: #f1f1f1;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Paragraph text should be black in light mode */
+.light-mode p {
+  color: #000000;
+}
+
+.me-text p {
+  color: #00afb9;
+}
+
+.light-mode h1,
+.light-mode h2,
+.light-mode h3,
+.light-mode h4,
+.light-mode h5,
+.light-mode h6 {
+  color: var(--primary-color);
+}
+
+/* Navigation styles */
+.nav {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.nav a {
+  color: var(--text-color);
+}
+
+.nav a:hover {
+  color: var(--hover-color);
+}
+
+/* Button styling */
+#btn {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+}
+
+#btn:hover {
+  background-color: var(--hover-color);
+}
+
+/* Heading colors in sections */
+.me h2,
+.biography h2 {
+  color: var(--primary-color);
+}
+
+.years {
+  color: var(--accent-color);
+}
+
+/* Project section */
+.project {
+  color: var(--text-color);
+  padding: 2rem;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-item {
+  color: var(--bg-color);
+}
+
+.project h2 {
+  color: var(--primary-color);
+}
+
+#personal_details {
+  color: var(--primary-color);
+}
+
+#personal_details h2 {
+  color: var(--primary-color);
+}
+
+/* Footer section */
+.footer {
+  background-color: var(--footer-bg-color);
+  color: var(--text-color);
+  padding: 2rem;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer p {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0.625rem 0;
+}
+
+.footer_content {
+  text-align: center;
+  color: var(--text-color);
+}
+
+.social_icons i {
+  font-size: 1.875rem;
+  color: var(--text-color);
+  margin: 0 0.625rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social_icons i:hover {
+  color: var(--hover-color);
+  transform: scale(1.2);
+}
+
+.intrest {
+  background-color: #f4f3ee;
+}
+.intrest h5 {
+  color: #000000;
+  background-color: #f4f3ee;
+}
