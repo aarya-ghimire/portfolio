@@ -1036,14 +1036,15 @@ hr {
 }
 
 .light-mode {
-  --bg-color: #f4f3ee;
+  --bg-color: #ded6d6;
   --text-color: #333333;
   --primary-color: #ff6f61;
   --secondary-color: #b2b2b2;
   --hover-color: #ff8c00;
   --accent-color: #00afb9;
   --project-bg-color: #ffffff;
-  --footer-bg-color: #f1f1f1;
+  --footer-bg-color: #ded6d6;
+  --c: #595358;
 }
 
 body {
@@ -1061,7 +1062,7 @@ body {
 }
 
 .me-text p {
-  color: #00afb9;
+  color: var(--c);
 }
 
 .light-mode h1,
