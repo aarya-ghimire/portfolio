@@ -1163,11 +1163,3 @@ body {
   color: var(--hover-color);
   transform: scale(1.2);
 }
-
-.intrest {
-  background-color: #f4f3ee;
-}
-.intrest h5 {
-  color: #000000;
-  background-color: #f4f3ee;
-}
